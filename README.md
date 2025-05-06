@@ -1,6 +1,15 @@
 # Free Cabins Europe
 
-Free Cabins is a web app for mapping and browsing free or low-cost cabins, shelters, and bivouacs across Europe. The goal is to centralize data about public shelters to make it easier for outdoor enthausiasts to plan multi-day trips with access to basic overnight accommodations.
+Free Cabins is a web app for mapping and browsing free or low-cost cabins, shelters, and bivouacs across Europe. Although many useful websites display data on (free) cabins nationally, it seems hard to find a resource that aggregates this data across Europe.
+
+## Purpose
+
+This project is both a useful tool and a technical sandbox. It's built to:
+
+- Provide a practical and open-source shelter map for outdoor enthusiasts
+- Explore and apply DevOps principles (containerization, CI/CD, environment management)
+- Experiment with modern web technologies like the Next.js App Router, Tailwind, and server components
+- Practice database design, API integration, and full-stack workflows
 
 ## Use Case
 
