@@ -1,0 +1,39 @@
+name: TypeScript Formatting
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  format-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Prettier
+        run: npx prettier --write .
+
+      - name: Check for formatting changes
+        run: git diff --exit-code
+        continue-on-error: true
+
+      - name: Fail on Prettier changes
+        if: ${{ failure() }}
+        run: |
+          echo "Prettier found formatting changes. Please run 'npx prettier --write .' and commit."
+          exit 1
