@@ -17,11 +17,9 @@ Free Cabins is a web app for mapping and browsing free or low-cost cabins, shelt
 - **Containerization**: Docker and Docker Compose for local database setup
 
 ## Getting Started
-
-### 1. Clone the repository
-## Getting Started
-
 ```bash
+1. Clone the repository
+
 git clone https://github.com/yourusername/free-cabins-europe.git
 cd free-cabins-europe
 
