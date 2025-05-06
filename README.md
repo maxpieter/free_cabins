@@ -52,8 +52,6 @@ Free Cabins Europe is a platform for mapping and browsing free or low-cost cabin
 
 ## Getting Started
 
-### 1. Clone the repository
-
 ```bash
 git clone https://github.com/yourusername/free-cabins-europe.git
 cd free-cabins-europe
@@ -76,6 +74,7 @@ npm run dev
 5. Build for production
 
 npm run build
+```
 
 Contributions
 
